@@ -1,25 +1,41 @@
 body {
-    font-family: 'Arial Bold', sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
 }
 
 header{
     display: flex;
     height: 60px;
-    background-color: rgb(219, 223, 220);
+    background-color: #376086;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 1cm;
     padding: 10px;
+    color:white;
+}
+
+footer {
+    background-color: #376086;
+    color: white;
+    text-align: left;
+    align-items: center;
+    padding: 1em 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 3.9cm;
+    flex-direction: column;
+    min-height: 50vh;
+    display: flex;
 }
 
 nav a{
     font-weight: 600;
     padding-right: 20px;
+    color: white;
 }
 
 nav a:hover{
-    color:#21ad28;
+    color:#a6d7f8;
 }
 
 
@@ -29,7 +45,7 @@ nav a:hover{
 }
 
 .logo img{
-    height: 50px;
+    height: 60px;
     margin-right: 50px;
 }
 
@@ -43,7 +59,7 @@ nav a:hover{
 }
 
 .todo-list, .calendar {
-    background-color: #ffffff;
+    background-color: #f1f9fd;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -141,4 +157,56 @@ form button {
 
 form button:hover {
     background-color: #218838;
+}
+
+.habits-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+    padding-bottom: 230px;
+    flex-wrap: wrap;
+    gap:  30px;
+}
+
+.habit {
+    border: 2px solid #214574;
+    border-radius: 5px;
+    padding: 20px;
+    width: 290px;
+    text-align: center;
+}
+
+.habit-title {
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.habit-buttons {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.habit-buttons button {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.habit-buttons button.active {
+    background-color: #214874;
+    color: white;
+}   
+
+.habit-buttons button.current-day{
+    border-color: orangered;
+    border-width: 0.075cm;
+    background-color: #214874;
+    color: white;
+    font-weight: bold;
 }
