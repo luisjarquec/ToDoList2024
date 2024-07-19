@@ -206,7 +206,5 @@ form button:hover {
 .habit-buttons button.current-day{
     border-color: orangered;
     border-width: 0.075cm;
-    background-color: #214874;
-    color: white;
     font-weight: bold;
 }
